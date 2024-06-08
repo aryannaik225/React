@@ -1,6 +1,7 @@
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Hero from "../components/Hero";
 import { FaHome } from "react-icons/fa";
+import Grid from "@/components/Grid";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
           <FloatingNav navItems={[{name: 'Home', link:'/', icon: <FaHome />}]}/>
         <Hero />
         {/* We basically called the Hero.tsx component in here */}
+        <Grid />
       </div>
     </main>
   );
