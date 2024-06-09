@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -77,7 +79,8 @@ export const navItems = [
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "Coming_Soon!",
+      // https://github.com/adrianhajdin?tab=repositories
     },
     {
       id: 2,
@@ -85,7 +88,8 @@ export const navItems = [
       des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
       img: "/p2.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      link: "Coming_Soon!",
+      // https://github.com/adrianhajdin/zoom-clone
     },
     {
       id: 3,
@@ -93,7 +97,8 @@ export const navItems = [
       des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
       img: "/p3.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      link: "Coming_Soon!",
+      // https://github.com/adrianhajdin/ai_saas_app
     },
     {
       id: 4,
@@ -101,7 +106,8 @@ export const navItems = [
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/p4.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      link: "Coming_Soon!",
+      // https://github.com/adrianhajdin/iphone
     },
   ];
   
@@ -141,33 +147,33 @@ export const navItems = [
   export const companies = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
+      name: "React",
+      img: "/re.svg",
+      nameImg: "/reactName.svg",
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
+      name: "nextjs",
+      img: "/next.svg",
+      nameImg: "/nextName.svg",
     },
     {
       id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
+      name: "Python",
+      img: "/python.svg",
+      nameImg: "/pythonName.svg",
     },
     {
       id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
+      name: "javascript",
+      img: "/js.svg",
+      nameImg: "/jsName.svg",
     },
     {
       id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
+      name: "figma",
+      img: "/figma.svg",
+      nameImg: "/figmaName.svg",
     },
   ];
   
@@ -206,10 +212,12 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link: "https://github.com/aryannaik225",
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/insta.svg",
+      link: "https://www.instagram.com/aryannaik225/",
     },
     {
       id: 3,

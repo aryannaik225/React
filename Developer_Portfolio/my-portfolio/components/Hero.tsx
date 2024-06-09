@@ -3,6 +3,10 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerate-Effect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
+import Background from 'three/examples/jsm/renderers/common/Background.js'
+import { navItems } from '@/data'
+import Link from 'next/link'
+import { cn } from '@/utils/cn'
 
 const Hero = () => {
   return (
@@ -16,6 +20,21 @@ const Hero = () => {
         <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
           {/* Radial gradient for the container to give a faded look */}
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        </div>
+
+        <div className='flex flex-row items-center gap-10 w-50 lg:w-25 absolute right-20 top-10'>
+          {navItems.map((navItem: any, idx: number) => (
+            <Link
+              key={`link=${idx}`}
+              href={navItem.link}
+              className={cn(
+                "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 font-medium"
+              )}
+            >
+              <span className="block sm:hidden">{navItem.icon}</span>
+              <span className="text-sm !cursor-pointer">{navItem.name}</span>
+            </Link>
+          ))}
         </div>
 
         <div className='flex justify-center relative my-20 z-10'>

@@ -12,16 +12,16 @@ const Approach = () => {
         My <span className="text-purple">approach</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
-        <Card title="Planning & Strategy" icon={<AceternityIcon order="Phase 1" />}
-          description = "We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content navigations."
+        <Card title="Planning & Design" icon={<AceternityIcon order="Phase 1" />}
+          description = "I start with a solid concept, drawing inspiration from various sites and creating detailed designs in Figma to ensure a smooth development process."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Development & Progress Update" icon={<AceternityIcon order="Phase 2"/>}
-          description = "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+        <Card title="Coding with Lofi Beats" icon={<AceternityIcon order="Phase 2"/>}
+          description = "With lofi beats in the background, I gather necessary assets and translate the Figma design into clean, functional code efficiently and effectively."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -33,8 +33,8 @@ const Approach = () => {
             dotSize={2}
           />
         </Card>
-        <Card title="Development & Launch" icon={<AceternityIcon order="Phase 3"/>}
-          description = "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+        <Card title="Documentation & Deployment" icon={<AceternityIcon order="Phase 3"/>}
+          description = "I document the project with a detailed README on GitHub, then push the code and deploy it, adding the best projects to my live portfolio."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -63,7 +63,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl"
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] "
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
